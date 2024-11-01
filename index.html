@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Manipulator & Tip Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>String Manipulator & Tip Calculator</h1>
+        
+        <!-- Reverse String Section -->
+        <section id="reverse-section">
+            <h2>Reverse a String</h2>
+            <input type="text" id="reverse-input" placeholder="Enter a String" />
+            <button onclick="reverseString()">Reverse</button>
+            <p id="reverse-result" class="result-text"></p>
+        </section>
+        
+        <!-- Palindrome checker Section -->
+        <section id="palindrome-section">
+            <h2>Check if a Number is a Palindrome</h2>
+            <input type="number" id="palindrome-input" placeholder="Enter a series of numbers" />
+            <button onclick="checkPalindrome()">Check Palindrome</button>
+            <p id="palindrome-result" class="result-text"></p>
+        </section>
+        
+        <!-- Tip Calculator Section -->
+        <section id="tip-section">
+            <h2>Calculate Total with Tip</h2>
+            <input type="number" id="subtotal-input" placeholder="Enter bill subtotal" />
+            <input type="number" id="tip-percentage-input" placeholder="Enter tip percentage" />
+            <button onclick="calculateTotal()">Calculate Total</button>
+            <p id="tip-result" class="result-text"></p>
+        </section>
+    </div>
+    
+    <script src="node.js"></script>
+</body>
+</html>
